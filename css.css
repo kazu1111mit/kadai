@@ -1,0 +1,596 @@
+body {
+  margin-top: 0px;
+  overflow: auto;
+  font-family: 'DotGothic16', sans-serif;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  /* ... 他のbodyのスタイル ... */
+  padding-top: 82px; /* ナビゲーションの高さに合わせて調整してください */
+  padding-bottom: 60px; /* フッターの高さに合わせて調整 */
+}
+
+header {
+  width: 100%;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#profile {
+  display: flex; /* Flexboxを有効にする */
+  flex-direction: row; /* 子要素を横方向に並べる */
+    align-items: flex-start; /* 子要素を上端で揃える（必要に応じて調整） */
+    max-width: 800px; /* 親要素の最大幅を調整 */
+    margin: 0 0 30px 10%; /* 中央揃えと下マージン */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#profile2 {
+  display: flex; /* Flexboxを有効にする */
+  flex-direction: row; /* 子要素を横方向に並べる */
+    align-items: flex-start; /* 子要素を上端で揃える（必要に応じて調整） */
+    max-width: 800px; /* 親要素の最大幅を調整 */
+    margin: 0 10% 30px 0px; /* 中央揃えと下マージン */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+}
+
+#profile3 {
+    width: 680px; /* 親要素の幅を調整 */
+    max-width: 1000px; /* 親要素の最大幅を調整 */
+    margin: 0 0px 30px 0; /* 中央揃えと下マージン */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#profile4 {
+    width: 730px; /* 親要素の幅を調整 */
+    max-width: 1000px; /* 親要素の最大幅を調整 */
+    margin: 0 0px 30px 0px; /* 中央揃えと下マージン */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111; /* 背景色はお好みで */
+  padding: 0px 0; /* パディングもお好みで */
+  text-align: center; /* テキスト配置もお好みで */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*囲み枠*/
+.dq-box {
+  background-color: hsl(0, 0%, 12%);
+  width: 1000px; /*親要素の半分の幅から左右のマージンを引いた値 */
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0;
+  font-family: 'DotGothic16', sans-serif;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: auto; /* sectionのflex-basisに任せる */
+}
+
+.dq-box2 {
+  background-color: hsl(0, 0%, 12%);
+  width: 620px; /*親要素の半分の幅から左右のマージンを引いた値 */
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0;
+  font-family: 'DotGothic16', sans-serif;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dq-box3 {
+  background-color: hsl(0, 0%, 12%);
+  width: auto; /*親要素の半分の幅から左右のマージンを引いた値 */
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 24px;
+  margin: 0;
+  font-family: 'DotGothic16', sans-serif;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dq-box4 {
+  background-color: hsl(0, 0%, 12%);
+  width: 450px; /*親要素の半分の幅から左右のマージンを引いた値 */
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'DotGothic16', sans-serif;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* dq-box4 内の p タグの幅 (PC向け) */
+.dq-box4 p {
+  width: 450px; /* PCでの本来の幅 */
+}
+
+.dq-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.dq-box h4 {
+  width: 700px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.dq-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dq-box li {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#global_navi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #111; /* ナビゲーションの背景色を追加（もし設定されていなければ） */
+  box-sizing: border-box; /* パディングを幅に含める */
+  padding: 10px 0; /* 上下のパディングを追加（ナビゲーションの高さ調整用） */
+}
+
+#global_navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color:  #111;
+}
+
+#global_navi ul li {
+    width: 100px;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+    font-size: 15px;
+}
+
+#global_navi ul li  a{
+    display: block;
+    list-style: none;
+    text-decoration: #111;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+body {
+  min-height: 100%;
+  padding-bottom: 60px; /* フッターの高さに合わせて調整 */
+  width: 100%;
+}
+
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#main {
+  display: flex;
+  flex-direction: row; /* ★ 変更点: PCでは横並びにするため row に */
+  flex-wrap: wrap; /* 子要素を折り返す */
+  justify-content: center; /* 子要素を中央寄せ */
+  gap: 30px; /* 各セクション間の隙間 */
+  width: 100%;
+  align-items: flex-start; /* 上寄せ */
+  margin: 0 auto;
+}
+
+#main section#profile,
+#main section#profile2 {
+  flex-basis: auto; /* コンテンツに合わせて幅を調整 */
+  max-width: 450px; /* 最大幅も設定 */
+  width: auto; /* width は auto にして flex-basis に従わせる */
+}
+
+ #profile { width: 450px; }
+ #profile2 { width: 450px; }
+ #main section#profile3 {
+  max-width: 930px;
+  width: auto;
+}
+
+#profile ul,
+#profile3 ul
+#profile4 ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* ul 要素を Flex コンテナにする */
+  flex-direction: column; /* アイテムを縦に並べる */
+}
+
+#profile3 ul {
+  padding-left: 0px;
+}
+
+
+#profile ul li,
+#profile3 ul li {
+  display: flex; /* li 要素を Flex コンテナにする */
+  align-items: baseline; /* ベースラインで揃える（: の位置を揃えるため） */
+  margin: 5px 0;
+}
+
+#profile4 ul li {
+  display: flex; /* li 要素を Flex コンテナにする */
+  align-items: baseline; /* ベースラインで揃える（: の位置を揃えるため） */
+  margin: 5px 0;
+  text-align: left;
+}
+
+#profile ul li span,
+#profile3 ul li span {
+  width: 80px; /* : を含む項目の幅を固定する（調整が必要な場合あり） */
+  display: inline-block; /* 幅を有効にする */
+  text-align: right; /* : を右寄せにする */
+  margin-right: 10px; /* : と値の間にスペースを作る */
+}
+
+#profile4 ul li span {
+  width: auto; /* : を含む項目の幅を固定する（調整が必要な場合あり） */
+  display: block; /* 幅を有効にする */
+  text-align: left; /* : を右寄せにする */
+  margin-right: 15px; /* : と値の間にスペースを作る */
+  padding-left: 0px;
+}
+
+img  {
+  width: 100px; 
+  height: auto; 
+  align-items: flex-start;
+}
+
+#hobby {
+  width: 100%;
+}
+
+#hobby_img {
+  width: 365px;
+  height: 205px;
+  margin-left: 0px;
+}
+
+#hobby_img_ra-men {
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+}
+
+#hobby ul li {
+    width: 450px;
+    text-align: center;
+}
+
+#hobby ul li  p {
+    width: 450px;
+}
+
+#game {
+  width: 100%;
+}
+
+#game_img {
+  width: 200px;
+  height: 200px;
+}
+
+#status {
+  width: 300px;
+  margin-left: 0px;
+}
+
+#scroll-to-top {
+  position: fixed; /* スクロールしても固定表示 */
+  bottom: 20px;    /* 下からの距離 */
+  right: 20px;     /* 右からの距離 */
+  background-color: rgba(0, 0, 0, 0.5); /* 背景色（半透明） */
+  color: #fff;                       /* 文字色 */
+  width: 40px;                        /* ボタンの幅 */
+  height: 40px;                       /* ボタンの高さ */
+  border-radius: 50%;                 /* 丸くする */
+  text-align: center;                /* 文字を中央揃え */
+  line-height: 40px;                /* 行の高さをボタンの高さと同じにして垂直中央揃え */
+  font-size: 1.5rem;                  /* 文字サイズ */
+  text-decoration: none;             /* 下線を消す */
+  z-index: 1000;                      /* 他の要素より前面に表示 */
+  border: 2px dotted #fff;
+  background-clip: padding-box; /* ボーダーが内側にかからないように */
+}
+
+
+#scroll-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* ホバー時の背景色 */
+}
+
+#scroll-to-top a {
+  text-decoration: none; /* 通常時の下線を消す */
+}
+
+#scroll-to-top a:hover {
+  text-decoration: none; /* ホバー時の下線も消す */
+}
+
+SNS{
+  margin-left: auto;
+}
+
+/* スマートフォン表示時の調整 */
+@media screen and (max-width: 767px) {
+  body {
+    text-align: left; /* スマートフォンでは全体的に左寄せが見やすい */
+    max-height: none; /* 不要なmax-heightを削除 */
+    padding-bottom: 70px; /* 固定フッター分のpadding調整 */
+  }
+
+  header {
+    width: 100%;
+    text-align: center; /* ヘッダー内の要素は中央寄せ */
+  }
+
+  h4 {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 2rem; /* 少し小さく */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  header h1:first-child { /* ('ω')ノﾔｧ の h1 要素 */
+    font-size: 2.5rem; /* こちらは少し大きめに */
+  }
+
+  #global_navi {
+    width: 100%;
+    font-size: 12px; /* 少し小さく */
+  }
+
+  #global_navi ul {
+    display: flex; /* 横並びにする */
+    flex-wrap: wrap; /* 折り返しを有効にする */
+    justify-content: space-around; /* 均等に配置 */
+  }
+
+  #global_navi ul li {
+    width: auto; /* 幅を自動調整 */
+    margin: 5px 0;
+    padding: 5px 10px;
+    border: 1px solid #333; /* 区切り線を追加 (必要に応じて) */
+    border-radius: 5px;
+  }
+
+  #global_navi ul li a {
+    display: block;
+    padding: 8px 0;
+  }
+
+  #wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+    text-align: left; /* wrapper 内のテキストは左寄せ */
+  }
+
+  #main {
+    width: 100%;
+    float: none;
+    align-items: stretch; /* 要素を幅いっぱいに */
+    margin: 0 auto;
+  }
+
+  .profile-container {
+    flex-direction: column; /* 縦並び */
+    align-items: stretch; /* 幅いっぱいに */
+  }
+
+  #profile,
+  #profile2{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0 !important; /* 左マージンをリセット */
+    margin-right: 0 !important; /* 右マージンをリセット */
+  }
+
+  #profile3 {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .dq-box,
+  .dq-box2,
+  .dq-box3,
+  .dq-box4 {
+    width: 100%;
+    box-sizing: border-box; /* パディングを幅に含める */
+  /* 必要であれば、左右のマージンも0に設定 */
+  margin-left: 0;
+  margin-right: 0;
+  /* スマートフォンでの左右の余白を確保するために、パディングを追加 */
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+  .dq-box2 {
+    padding-left: 2px;
+    padding-right: 0;
+  }
+
+  .dq-box ul,
+  .dq-box2 ul,
+  .dq-box3 ul,
+  .dq-box4 ul {
+    padding-left: 20px; /* リストのインデント */
+  }
+
+  /* dq-box4 内の p タグの固定幅も解除 */
+.dq-box4 p {
+    width: auto; /* 固定幅を解除 */
+    max-width: 100%; /* 親要素を超えないように念のため設定 */
+    margin: 0 auto; /* 中央寄せ */
+}
+
+  #profile ul li span,
+  #profile3 ul li span {
+    width: auto; /* 幅を自動調整 */
+    display: inline-block;
+    text-align: left; /* 左寄せ */
+    margin-right: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #hobby_img {
+    width: 100%;
+    height: auto;
+  }
+
+  #game_img {
+    width: 100%;
+    height: auto;
+  }
+
+  #status {
+    width: 100%;
+  }
+
+  #scroll-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.2rem;
+  }
+
+  img {
+  max-width: 100%; /* 親要素の幅を超えない */
+  height: auto; /* 縦横比を維持 */
+  margin-left: auto; /* 画像を中央寄せ */
+  margin-right: auto;
+  display: block; /* autoマージンを適用するためにブロック要素にする */
+}
+
+/* #hobby_img の調整 (これも .dq-box4 の中にあります) */
+#hobby_img {
+  width: 100%; /* 親要素の幅に合わせて100%にする */
+  height: auto; /* 縦横比を維持 */
+  margin-left: 0; /* マージンをリセット */
+}
+
+/* #hobby ul li の幅も調整 */
+#hobby ul li {
+    width: 100%; /* リストアイテムも全幅に */
+    box-sizing: border-box; /* パディングを幅に含める */
+
+}
+}
